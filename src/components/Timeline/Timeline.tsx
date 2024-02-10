@@ -9,11 +9,13 @@ function Timeline(props: {
   icono?: ReactNode
 }) {
   return (
-    <>
-      <div>
-        <a className="rounded-full w-6 h-6 bg-red"></a>
+    <div className="flex gap-5">
+      <div className="flex flex-col align-middle items-center px-2">
+        <a className="inline-block rounded-full w-5 h-5 bg-l_fg dark:bg-d_fg"></a>
+        <div className="h-full bordzer-solid border-l-2 bg-l_fg dark:bg-d_fg"></div>
       </div>
-      <div>
+
+      <div className="pb-6">
         <TimelineSection
           tiempo={props.tiempo}
           empresa={props.empresa}
@@ -21,7 +23,7 @@ function Timeline(props: {
           funciones={props.funciones}
         />
       </div>
-    </>
+    </div>
   );
 }
 

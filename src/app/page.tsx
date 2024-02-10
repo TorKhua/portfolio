@@ -10,7 +10,7 @@ import Studies from "@/components/Sections/Studies/Studies";
 
 export default function Home() {
   return (
-    <main className="max-w-3xl m-auto">
+    <main className="max-w-3xl m-auto px-5">
       <Nav />
       <Header />
       <Profile />
