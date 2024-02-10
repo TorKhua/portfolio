@@ -1,8 +1,9 @@
 import React from 'react'
+import Title from '../../Title'
 
 function Studies() {
   return (
-    <div>Studies</div>
+    <Title title='Estudios' />
   )
 }
 

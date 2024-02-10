@@ -1,8 +1,9 @@
 import React from 'react'
+import Title from '../../Title'
 
 function Experience() {
   return (
-    <div>Experience</div>
+    <Title title='Experiencia' />
   )
 }
 

@@ -1,28 +1,25 @@
-'use client'
 import Image from "next/image";
 import React from "react";
 import logo from "/public/logo.jpg";
-import { useTheme } from "next-themes";
 
 function Header() {
-  const { theme, setTheme } = useTheme();
   return (
-    <div className="w-full">
-      <div className="bg-bg">
-        <div className="w-52 h-52 rounded-full border-solid border-red border-4">
+    <div className="flex flex-wrap gap-4 justify-center align-middle">
+      <div>
+        <div className="w-32 h-32 rounded-full border-solid border-l_fg2 dark:border-d_fg2 border-4">
           <Image
             src={logo}
             alt="Foto de Alejandro Torcuato"
             className="rounded-full"
           />
         </div>
-        <div>
-          The current theme is: {theme}
-          <button onClick={() => setTheme("light")}>Light Mode</button>
-          <button onClick={() => setTheme("dark")}>Dark Mode</button>
-        </div>
       </div>
-      <div></div>
+      <div className="flex flex-col align-middle justify-center">
+        <p className="text-3xl">Alejandro Torcuato Morgado</p>
+        <p className="text-xl">Desarrollador Web</p>
+        {/* ICONOS */}
+        <div></div>
+      </div>
     </div>
   );
 }
