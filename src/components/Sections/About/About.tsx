@@ -1,10 +1,12 @@
 import React from 'react'
-import Title from '../../Title'
 import { Sun } from 'lucide-react'
+import Section from '../Section'
 
 function About() {
   return (
-    <Title title='Sobre mí' icon={<Sun />} />
+    <Section title='Sobre mí' icon={<Sun />}>
+      
+    </Section>
   )
 }
 

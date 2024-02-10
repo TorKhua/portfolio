@@ -1,9 +1,11 @@
 import React from 'react'
-import Title from '../../Title'
+import Section from '../Section'
 
 function Skills() {
   return (
-    <Title title='Habilidades' />
+    <Section title='Habilidades' >
+      
+    </Section>
   )
 }
 

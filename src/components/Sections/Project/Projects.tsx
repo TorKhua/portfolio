@@ -1,9 +1,11 @@
 import React from 'react'
-import Title from '../../Title'
+import Section from '../Section'
 
 function Projects() {
   return (
-    <Title title='Proyectos' />
+    <Section title='Proyectos'>
+      
+    </Section>
   )
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
-import Title from '../../Title'
+import Section from '../Section'
+import Timeline from '@/components/Timeline/Timeline'
 
 function Experience() {
   return (
-    <Title title='Experiencia' />
+    <Section title='Experiencia'>
+      <Timeline cargo='jefe' empresa='tecnotac' tiempo='2012-2013' funciones={[{descripcion : 'hola'},{descripcion : 'hola'}]}>
+      </Timeline> 
+    </Section>
   )
 }
 
