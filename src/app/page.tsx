@@ -12,18 +12,17 @@ export default function Home() {
   return (
     <main className="max-w-3xl m-auto">
       <div
-        className="px-5 sticky top-0 dark:bg-d_bg bg-l_bg">
+        className="px-5 sticky top-0 dark:bg-d_bg bg-l_bg_h">
         <Nav />
       </div>
       <div className="px-5">
         <Header />
         <Profile />
-        <Experience />
         <Studies />
         <Skills />
+        <Experience />
         <Languages />
         <Projects />
-        <About />
       </div>
     </main>
   );

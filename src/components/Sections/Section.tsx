@@ -8,7 +8,7 @@ function Section(props: {
 }) {
   return (
     <section className="pb-8">
-      <Title title={props.title} icon={props.icon} />
+      <Title title={props.title}/>
       <div>{props.children}</div>
     </section>
   );

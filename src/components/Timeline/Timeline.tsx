@@ -12,8 +12,8 @@ function Timeline(props: {
   return (
     <div className="flex gap-5">
       <div className="flex flex-col align-middle items-center px-2">
-        <a className="inline-block rounded-full w-5 h-5 bg-l_fg dark:bg-d_fg"></a>
-        <div className="h-full bordzer-solid border-l-2 bg-l_fg dark:bg-d_fg"></div>
+        <a className="inline-block rounded-full w-5 h-5 bg-l_fg3 dark:bg-d_fg"></a>
+        <div className="h-full border-solid border-l-2 border-d_bg3 dark:border-d_fg"></div>
       </div>
 
       <div className="pb-6">

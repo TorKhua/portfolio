@@ -16,12 +16,6 @@ function Experience() {
       >
         <div className="py-2 flex flex-wrap gap-3">
 
-        <Tag text='FireBird' className="bg-l_orange dark:bg-d_orange"/>
-        <Tag text='TypeScript' className="bg-l_blue dark:bg-d_blue"/>
-        <Tag text='Delphi' className="bg-l_red dark:bg-d_red"/>
-        <Tag text='IBExpert' className="bg-l_green dark:bg-d_green"/>
-        <Tag text='FireBird' className="bg-l_purple dark:bg-d_purple"/>
-        <Tag text='FireBird' className="bg-l_aqua dark:bg-d_aqua"/>
         
         <Tag text='FireBird' className="dark:bg-l_orange bg-d_orange"/>
         <Tag text='TypeScript' className="dark:bg-l_blue bg-d_blue"/>

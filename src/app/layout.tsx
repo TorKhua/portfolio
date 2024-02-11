@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 const myFont = localFont({ src: 'JetBrainsMono-Regular.woff2' })
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${myFont.className} dark:bg-d_bg bg-l_bg text-l_fg dark:text-d_fg`}>
+      <body className={` dark:bg-d_bg bg-l_bg_h text-l_fg dark:text-d_fg`}>
         <Providers>{children}</Providers>
       </body>
     </html>

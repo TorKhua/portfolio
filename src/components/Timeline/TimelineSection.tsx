@@ -10,8 +10,8 @@ function TimelineSection(props: {
 }) {
   return (
     <div>
-      <p>{props.tiempo}</p>
-      <p>{props.empresa}</p>
+      <p >{props.tiempo}</p>
+      <p className="font-bold">{props.empresa}</p>
       <p>{props.cargo}</p>
       <ul>
         {props.funciones.map((item, index) => (
