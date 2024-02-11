@@ -10,16 +10,21 @@ import Studies from "@/components/Sections/Studies/Studies";
 
 export default function Home() {
   return (
-    <main className="max-w-3xl m-auto px-5">
-      <Nav />
-      <Header />
-      <Profile />
-      <Experience />
-      <Studies />
-      <Skills />
-      <Languages />
-      <Projects />
-      <About />
+    <main className="max-w-3xl m-auto">
+      <div
+        className="px-5 sticky top-0 dark:bg-d_bg bg-l_bg">
+        <Nav />
+      </div>
+      <div className="px-5">
+        <Header />
+        <Profile />
+        <Experience />
+        <Studies />
+        <Skills />
+        <Languages />
+        <Projects />
+        <About />
+      </div>
     </main>
   );
 }

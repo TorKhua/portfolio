@@ -1,11 +1,12 @@
 import { Key } from "lucide-react";
-import React from "react";
+import React, { ReactNode } from "react";
 
 function TimelineSection(props: {
   tiempo: string;
   empresa: string;
   cargo: string;
   funciones: {descripcion : string}[];
+  children : ReactNode
 }) {
   return (
     <div>
@@ -17,6 +18,9 @@ function TimelineSection(props: {
          <li key={index}>{item.descripcion}</li>
       ))}
       </ul>
+      <div>
+      {props.children}
+      </div>
     </div>
   );
 }

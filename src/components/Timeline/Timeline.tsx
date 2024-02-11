@@ -6,7 +6,8 @@ function Timeline(props: {
   empresa: string;
   cargo: string;
   funciones: {descripcion : string}[];
-  icono?: ReactNode
+  icono?: ReactNode,
+  children ?: ReactNode
 }) {
   return (
     <div className="flex gap-5">
@@ -21,8 +22,11 @@ function Timeline(props: {
           empresa={props.empresa}
           cargo={props.cargo}
           funciones={props.funciones}
-        />
+        >
+          {props.children}
+        </TimelineSection>
       </div>
+      
     </div>
   );
 }

@@ -4,7 +4,7 @@ import logo from "/public/logo.jpg";
 
 function Header() {
   return (
-    <div className="flex flex-wrap gap-4 justify-center align-middle">
+    <div className="flex flex-wrap gap-4 justify-center align-middle my-10">
       <div>
         <div className="w-32 h-32 rounded-full border-solid border-l_fg2 dark:border-d_fg2 border-4">
           <Image
@@ -15,7 +15,12 @@ function Header() {
         </div>
       </div>
       <div className="flex flex-col align-middle justify-center">
-        <p className="text-3xl">Alejandro Torcuato Morgado</p>
+        <p className="text-4xl">
+          <span className="text-orange">alejandro</span>
+          <span className="text-blue">(</span>
+          <span className="text-aqua">tm</span>
+          <span className="text-blue">)</span>;
+        </p>
         <p className="text-xl">Desarrollador Web</p>
         {/* ICONOS */}
         <div></div>
