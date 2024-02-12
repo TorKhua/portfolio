@@ -1,4 +1,3 @@
-import { Key } from "lucide-react";
 import React, { ReactNode } from "react";
 
 function TimelineSection(props: {

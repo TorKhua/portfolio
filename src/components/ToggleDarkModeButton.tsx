@@ -1,7 +1,7 @@
 "use client";
 import React, { SyntheticEvent } from "react";
 import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
+import { IoMoon, IoSunny } from "react-icons/io5";
 
 function ToggleDarkModeButton() {
   const { theme, setTheme } = useTheme();
@@ -12,7 +12,16 @@ function ToggleDarkModeButton() {
   };
   return (
     <div>
-      <button className="cursor-pointer" onClick={handleTheme}>{theme === "light" ? <Sun /> : <Moon />} </button>
+      <button
+        className={`cursor-pointer transition-all duration-700 ease-in-out`}
+        onClick={handleTheme}
+      >
+        {theme === "light" ? (
+          <IoSunny className="w-6 h-6" />
+        ) : (
+          <IoMoon className="w-6 h-6" />
+        )}{" "}
+      </button>
     </div>
   );
 }

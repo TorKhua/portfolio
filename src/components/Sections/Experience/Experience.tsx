@@ -5,7 +5,6 @@ import Tag from "@/components/Tag";
 
 function Experience() {
 
-
   return (
     <Section title="Experiencia">
       <Timeline
