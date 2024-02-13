@@ -39,14 +39,14 @@ function Header() {
         {/* Section Header Photo + Name */}
         <div
           className={`${
-            isScrolled ? "py-4" : "flex-col md:flex-row my-10"
+            isScrolled ? "py-4" : "flex-col sm:flex-row my-10"
           } flex gap-4 justify-center items-center`}
         >
           <div>
             <div
               className={`${
                 isScrolled ? "w-10 h-10" : "w-32 h-32"
-              } rounded-full border-solid border-l_fg2 dark:border-d_fg2 border-2 transition-all duration-500`}
+              } rounded-full border-solid border-l_fg2 dark:border-d_fg2 border-2 transition-all duration-300`}
             >
               <Image
                 src={logo}
@@ -74,7 +74,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="max-w-3xl mt-[400px]"></div>
+      <div className="max-w-3xl mt-[450px] sm:mt-[400px]"></div>
     </>
   );
 }
