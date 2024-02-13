@@ -1,11 +1,17 @@
 import React from "react";
-import ToggleDarkModeButton from "../ToggleDarkModeButton";
 
 function Nav() {
   return (
-    <div className="w-full py-4 flex align-middle justify-between">
-      <div>alejandro(tm);</div>
-        <ToggleDarkModeButton />
+    <div className="hidden fixed top-28 left-28 w-full py-4 xl:flex align-middle justify-between">
+      <ul className="flex flex-col gap-4">
+        <li><a className="cursor-pointer" href="#inicio">Inicio</a></li>
+        <li><a className="cursor-pointer" href="#perfil">Perfil</a></li>
+        <li><a className="cursor-pointer" href="#estudios">Estudios</a></li>
+        <li><a className="cursor-pointer" href="#habilidades">Skills</a></li>
+        <li><a className="cursor-pointer" href="#experiencia">Experiencia</a></li>
+        <li><a className="cursor-pointer" href="#idiomas">Idiomas</a></li>
+        <li><a className="cursor-pointer" href="#proyectos">Proyectos</a></li>
+      </ul>
     </div>
   );
 }
