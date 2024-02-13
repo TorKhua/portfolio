@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="max-w-3xl m-auto">
         <Header />
-      <div className="px-5">
+      <div className="px-5 my-[550px] sm:my-[500px]">
         <Profile />
         <Studies />
         <Skills />
