@@ -10,6 +10,7 @@
   --background-end-rgb: 255, 255, 255;
   */
   font-family: 'Fira Code', monospace, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
