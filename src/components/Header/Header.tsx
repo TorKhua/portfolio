@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "/public/logo.jpg";
+import logo from "/public/logo.png";
 import ToggleDarkModeButton from "../ToggleDarkModeButton";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
@@ -10,7 +10,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 60);
     };
 
     // just trigger this so that the initial state
@@ -29,6 +29,7 @@ function Header() {
   return (
     <>
       <div
+      
         className={`${
           isScrolled ? "flex flex-row-reverse justify-between items-center" : ""
         } fixed w-full top-0 max-w-3xl px-5 dark:bg-d_bg bg-l_bg_h`}
@@ -39,14 +40,14 @@ function Header() {
         {/* Section Header Photo + Name */}
         <div
           className={`${
-            isScrolled ? "py-4" : "flex-col sm:flex-row my-10"
-          } flex gap-4 justify-center items-center`}
+            isScrolled ? "py-4 gap-4" : "flex-col sm:flex-row my-10 gap-8"
+          } flex  justify-center items-center`}
         >
           <div>
             <div
               className={`${
-                isScrolled ? "w-10 h-10" : "w-32 h-32"
-              } rounded-full border-solid border-l_fg2 dark:border-d_fg2 border-2 transition-all duration-300`}
+                isScrolled ? "w-10 h-10 border-2" : "w-52 h-52 border-4"
+              } rounded-full border-solid border-l_fg2 dark:border-d_fg2 dark:bg-aqua bg-aqua  transition-all duration-500`}
             >
               <Image
                 src={logo}
@@ -74,7 +75,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="max-w-3xl mt-[450px] sm:mt-[400px]"></div>
+      <div className="max-w-3xl"></div>
     </>
   );
 }

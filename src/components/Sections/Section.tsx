@@ -6,11 +6,12 @@ function Section(props: {
   icon?: ReactNode;
   children?: ReactNode;
   id ?: string;
+  className ?: string;
 }) {
   return (
-    <section id={props.id} className="pb-8">
+    <section id={props.id} className={`${props.className} pb-8`}>
       <Title title={props.title}/>
-      <div>{props.children}</div>
+      {props.children}
     </section>
   );
 }
