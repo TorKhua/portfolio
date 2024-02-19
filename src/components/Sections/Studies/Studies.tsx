@@ -9,20 +9,14 @@ function Studies() {
       cargo: "Sistemas Microinformáticos y Redes",
       empresa: "IES Poeta Pacó Mollá",
       tiempo: "2019-2021",
-      funciones: [{ descripcion: "" }],
-      iconos: (
-        <>
-          <Tag text="Nextjs" className="bg-purple" />
-        </>
-      ),
+      funciones: [],
     },
     {
       cargo: "Desarrollo de Aplicaciones Web",
       empresa: "IES Poeta Pacó Mollá",
       tiempo: "2021-2023",
-      funciones: [{ descripcion: "" }],
+      funciones: [],
     },
-    
   ];
 
   return (
@@ -34,10 +28,8 @@ function Studies() {
           empresa={item.empresa}
           tiempo={item.tiempo}
           funciones={item.funciones}
-          ultima={index===estudios.length-1}
-        >
-          {item.iconos}
-        </Timeline>
+          ultima={index === estudios.length - 1}
+        />
       ))}
     </Section>
   );

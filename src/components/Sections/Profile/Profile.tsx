@@ -5,9 +5,7 @@ function Profile() {
   return (
     <Section title="Perfil">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo libero
-        et, quasi, cum voluptate aperiam magni soluta quis optio autem
-        deserunt vel, tempora accusantium necessitatibus distinctio vero enim
+        Hi!
       </p>
     </Section>
   );

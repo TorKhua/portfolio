@@ -69,8 +69,14 @@ function Header() {
             </p>
             {/* ICONOS */}
             <div className={`${isScrolled ? "hidden" : "text-xl"} flex flex-row gap-4 `}>
+              <a>
               <FaLinkedinIn href="" />
+
+              </a>
+              <a>
+
               <FaGithub />
+              </a>
             </div>
           </div>
         </div>

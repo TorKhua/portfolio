@@ -4,34 +4,56 @@ import Timeline from "@/components/Timeline/Timeline";
 import Tag from "@/components/Tag";
 
 function Experience() {
-
+  const trabajo = [
+    {
+      cargo: "Soporte Técnico",
+      empresa: "NeoFranquicias",
+      tiempo: "03/2021 - 06/2021",
+      funciones: [],
+      iconos: (
+        <>
+          <Tag text="HTML" className="dark:bg-l_orange bg-d_orange" />
+          <Tag text="CSS" className="dark:bg-l_blue bg-d_blue" />
+          <Tag text="Prestashop" className="dark:bg-l_purple bg-d_purple" />
+          <Tag text="Wordpress" className="dark:bg-l_blue bg-d_blue" />
+        </>
+      ),
+    },
+    {
+      cargo: "Desarrollador Multiplataforma",
+      empresa: "Tecnotac S.L.U.",
+      tiempo: "03/2023 - actual",
+      funciones: [
+        { descripcion: "Desarrollo del ERP." },
+        { descripcion: "Gestión de la base de datos." },
+        { descripcion: "Migración del programa de Visual Fox Pro a Delphi." },
+        { descripcion: "Mantenimiento de equipos." },
+        { descripcion: "Instalación de sistemas operativos." },
+      ],
+      iconos: (
+        <>
+          <Tag text="FireBird" className="dark:bg-l_orange bg-d_orange" />
+          <Tag text="Delphi" className="dark:bg-l_red bg-d_red" />
+          <Tag text="IBExpert" className="dark:bg-l_green bg-d_green" />
+        </>
+      ),
+    },
+  ];
   return (
     <Section title="Experiencia">
-      <Timeline
-        cargo="jefe"
-        empresa="tecnotac"
-        tiempo="2012-2013"
-        funciones={[{ descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem tempora quis nobis? Non dolor illo nam consectetur voluptas, voluptatem id praesentium rerum at, laborum dolorum facilis atque architecto vero perferendis! Dicta repellendus totam asperiores cum recusandae mollitia non sint quam fuga accusamus quaerat eius at facere quisquam, magni aut dolor odit aspernatur, rerum sit excepturi praesentium nisi illum!" }, { descripcion: "hola" }]}
-      >
-        <div className="py-2 flex flex-wrap gap-3">
-
-        
-        <Tag text='FireBird' className="dark:bg-l_orange bg-d_orange"/>
-        <Tag text='TypeScript' className="dark:bg-l_blue bg-d_blue"/>
-        <Tag text='Delphi' className="dark:bg-l_red bg-d_red"/>
-        <Tag text='IBExpert' className="dark:bg-l_green bg-d_green"/>
-        <Tag text='FireBird' className="dark:bg-l_purple bg-d_purple"/>
-        <Tag text='FireBird' className="dark:bg-l_aqua bg-d_aqua"/>
-      </div>
-      </Timeline>
-      <Timeline
-        cargo="jefe"
-        empresa="tecnotac"
-        tiempo="2012-2013"
-        funciones={[{ descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem tempora quis nobis? Non dolor illo nam consectetur voluptas, voluptatem id praesentium rerum at, laborum dolorum facilis atque architecto vero perferendis! Dicta repellendus totam asperiores cum recusandae mollitia non sint quam fuga accusamus quaerat eius at facere quisquam, magni aut dolor odit aspernatur, rerum sit excepturi praesentium nisi illum!" }, { descripcion: "hola" }]}
-      ></Timeline>
+      {trabajo.map((item, index) => (
+        <Timeline
+          key={index}
+          cargo={item.cargo}
+          empresa={item.empresa}
+          tiempo={item.tiempo}
+          funciones={item.funciones}
+          ultima={index === trabajo.length - 1}
+        >
+          {item.iconos}
+        </Timeline>
+      ))}
     </Section>
-    
   );
 }
 

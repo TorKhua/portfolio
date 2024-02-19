@@ -9,7 +9,7 @@ function Section(props: {
   className ?: string;
 }) {
   return (
-    <section id={props.id} className={`${props.className} pb-8`}>
+    <section id={props.id} className={`${props.className===undefined ? '' : props.className} pb-8`}>
       <Title title={props.title}/>
       {props.children}
     </section>
