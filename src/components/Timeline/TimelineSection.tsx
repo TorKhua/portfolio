@@ -9,11 +9,13 @@ function TimelineSection(props: {
 }) {
   return (
     <div>
+      <div className="leading-7">
+
       <p>{props.tiempo}</p>
       <p className="font-bold">{props.empresa}</p>
       <p>{props.cargo}</p>
       {props.funciones.length > 0 && (
-        <ul>
+        <ul className="ml-10">
           {props.funciones.map((item, index) => (
             <li className="list-disc" key={index}>
               {item.descripcion}
@@ -21,7 +23,8 @@ function TimelineSection(props: {
           ))}
         </ul>
       )}
-      <div className="flex flex-wrap gap-4">{props.children}</div>
+      </div>
+      <div className="flex flex-wrap gap-4 mt-2">{props.children}</div>
     </div>
   );
 }
