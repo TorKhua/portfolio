@@ -13,6 +13,8 @@ function ToggleDarkModeButton() {
   return (
     <div>
       <button
+        id="themeChanger"
+        aria-label="Change theme"
         className={`cursor-pointer transition-all duration-700 ease-in-out`}
         onClick={handleTheme}
       >

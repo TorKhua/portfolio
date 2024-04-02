@@ -13,8 +13,8 @@ function Timeline(props: {
   return (
     <div className="flex gap-5">
       <div className="flex flex-col align-middle items-center px-2">
-        <a className="inline-block rounded-full w-5 h-6 bg-l_fg3 dark:bg-d_fg"></a>
-        <div className="h-full border-solid border-l-2 border-d_bg3 dark:border-d_fg"></div>
+        <span className="inline-block rounded-full w-5 h-6 bg-l_fg2 dark:bg-d_fg"></span>
+        <div className="h-full border-solid border-l-2 border-d_bg2 dark:border-d_fg"></div>
       </div>
 
       <div className={`${props.ultima || props.ultima===undefined  ? '' : 'pb-6' }`}>
