@@ -75,7 +75,10 @@ function Header() {
                 isScrolled ? "hidden" : "text-xl"
               } flex flex-row gap-4 `}
             >
-              <a href="https://es.linkedin.com/in/alejandro-torcuato-morgado-213169260" aria-label="Link a LinkedIn">
+              <a
+                href="https://es.linkedin.com/in/alejandro-torcuato-morgado-213169260"
+                aria-label="Link a LinkedIn"
+              >
                 <FaLinkedinIn />
               </a>
               <a href="https://github.com/TorKhua" aria-label="Link a Github">

@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   description: "Portfolio Alejandro Torcuato",
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{

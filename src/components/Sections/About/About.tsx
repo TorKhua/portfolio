@@ -1,12 +1,8 @@
-import React from 'react'
-import Section from '../Section'
+import React from "react";
+import Section from "../Section";
 
 function About() {
-  return (
-    <Section title='Sobre mí'>
-      
-    </Section>
-  )
+  return <Section title="Sobre mí"></Section>;
 }
 
-export default About
+export default About;

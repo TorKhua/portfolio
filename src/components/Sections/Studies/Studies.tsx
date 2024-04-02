@@ -1,7 +1,6 @@
 import React from "react";
 import Section from "../Section";
 import Timeline from "@/components/Timeline/Timeline";
-import Tag from "@/components/Tag";
 
 function Studies() {
   const estudios = [

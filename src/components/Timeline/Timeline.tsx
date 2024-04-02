@@ -8,7 +8,7 @@ function Timeline(props: {
   funciones: { descripcion: string }[];
   icono?: ReactNode;
   children?: ReactNode;
-  ultima ?: boolean;
+  ultima?: boolean;
 }) {
   return (
     <div className="flex gap-5">
@@ -17,7 +17,11 @@ function Timeline(props: {
         <div className="h-full border-solid border-l-2 border-d_bg2 dark:border-d_fg"></div>
       </div>
 
-      <div className={`${props.ultima || props.ultima===undefined  ? '' : 'pb-6' }`}>
+      <div
+        className={`${
+          props.ultima || props.ultima === undefined ? "" : "pb-6"
+        }`}
+      >
         <TimelineSection
           tiempo={props.tiempo}
           empresa={props.empresa}

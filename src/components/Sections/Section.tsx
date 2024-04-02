@@ -5,12 +5,15 @@ function Section(props: {
   title: string;
   icon?: ReactNode;
   children?: ReactNode;
-  id ?: string;
-  className ?: string;
+  id?: string;
+  className?: string;
 }) {
   return (
-    <section id={props.id} className={`${props.className===undefined ? '' : props.className} pb-8`}>
-      <Title title={props.title}/>
+    <section
+      id={props.id}
+      className={`${props.className === undefined ? "" : props.className} pb-8`}
+    >
+      <Title title={props.title} />
       {props.children}
     </section>
   );

@@ -1,6 +1,9 @@
 import React from "react";
 import RoundedTag from "./RoundedTag";
-import { SiGithub, SiGithubactions, SiGithubpages, SiGithubsponsors, SiNextdotjs, SiReact } from "react-icons/si";
+import {
+  SiGithub,
+  SiNextdotjs,
+} from "react-icons/si";
 import Image from "next/image";
 import foto from "/public/logo.svg";
 
@@ -25,11 +28,11 @@ function ProjectCard() {
           </div>
         </div>
         <div>
-            <Image
-              src={foto}
-              alt="Foto de Alejandro Torcuato"
-              className="max-w-72 rounded-xl"
-            />
+          <Image
+            src={foto}
+            alt="Foto de Alejandro Torcuato"
+            className="max-w-72 rounded-xl"
+          />
         </div>
       </div>
     </div>

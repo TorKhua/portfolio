@@ -4,9 +4,7 @@ import Section from "../Section";
 function Profile() {
   return (
     <Section title="Perfil">
-      <p>
-        Hi!
-      </p>
+      <p>Hi!</p>
     </Section>
   );
 }
