@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "/public/logo.png";
+import logo from "/public/logo.svg";
 import ToggleDarkModeButton from "../ToggleDarkModeButton";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
@@ -29,7 +29,6 @@ function Header() {
   return (
     <>
       <div
-      
         className={`${
           isScrolled ? "flex flex-row-reverse justify-between items-center" : ""
         } fixed w-full top-0 max-w-3xl px-5 dark:bg-d_bg bg-l_bg_h`}
@@ -53,29 +52,34 @@ function Header() {
                 src={logo}
                 alt="Foto de Alejandro Torcuato"
                 className="rounded-full"
+                priority
               />
             </div>
           </div>
 
           <div className="flex flex-col align-middle justify-center">
             <p className={`${isScrolled ? "text-base" : "text-4xl"} `}>
-              <span className="text-orange">alejandro</span>
-              <span className="text-blue">(</span>
-              <span className="text-aqua">tm</span>
-              <span className="text-blue">)</span>;
+              <span className="dark:text-d_orange text-l_orange">
+                alejandro
+              </span>
+              <span className="dark:text-d_blue text-l_blue">(</span>
+              <span className="dark:text-d_aqua text-l_aqua">tm</span>
+              <span className="dark:text-d_blue text-l_blue">)</span>;
             </p>
             <p className={`${isScrolled ? "hidden" : "text-xl"} py-2`}>
               Desarrollador Web
             </p>
             {/* ICONOS */}
-            <div className={`${isScrolled ? "hidden" : "text-xl"} flex flex-row gap-4 `}>
-              <a>
-              <FaLinkedinIn href="" />
-
+            <div
+              className={`${
+                isScrolled ? "hidden" : "text-xl"
+              } flex flex-row gap-4 `}
+            >
+              <a href="https://es.linkedin.com/in/alejandro-torcuato-morgado-213169260" aria-label="Link a LinkedIn">
+                <FaLinkedinIn />
               </a>
-              <a>
-
-              <FaGithub />
+              <a href="https://github.com/TorKhua" aria-label="Link a Github">
+                <FaGithub />
               </a>
             </div>
           </div>
