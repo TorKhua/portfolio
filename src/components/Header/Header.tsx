@@ -78,10 +78,15 @@ function Header() {
               <a
                 href="https://es.linkedin.com/in/alejandro-torcuato-morgado-213169260"
                 aria-label="Link a LinkedIn"
+                className="hover:scale-110 transition-all duration-100 ease-in-out hover:text-d_fg2"
               >
                 <FaLinkedinIn />
               </a>
-              <a href="https://github.com/TorKhua" aria-label="Link a Github">
+              <a
+                href="https://github.com/TorKhua"
+                aria-label="Link a Github"
+                className="hover:scale-110 transition-all duration-100 ease-in-out hover:text-d_fg2"
+              >
                 <FaGithub />
               </a>
             </div>

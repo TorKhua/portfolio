@@ -7,9 +7,9 @@ import Studies from "@/components/Sections/Studies/Studies";
 
 export default function Home() {
   return (
-    <main className="max-w-3xl m-auto">
+    <main className="max-w-3xl m-auto selection:bg-d_blue">
       <Header />
-      <div className="px-5 my-[550px] sm:my-[500px]">
+      <div className="px-5 mt-[550px] sm:mt-[500px]">
         <Profile />
         <Studies />
         <Skills />

@@ -1,13 +1,11 @@
-import React from "react";
-import RoundedTag from "./RoundedTag";
-import {
-  SiGithub,
-  SiNextdotjs,
-} from "react-icons/si";
-import Image from "next/image";
-import foto from "/public/logo.svg";
+import React, { ReactNode } from "react";
 
-function ProjectCard() {
+function ProjectCard(props: {
+  title: string;
+  description: string;
+  icons: ReactNode;
+  image: ReactNode;
+}) {
   return (
     <div className="w-full">
       {/* Parte arriba del header */}
@@ -18,22 +16,13 @@ function ProjectCard() {
       </div>
 
       {/* Contenido principal */}
-      <div className="w-full bg-l_bg1 dark:bg-d_bg3 p-3 rounded-b-xl flex flex-wrap justify-between items-center gap-4">
+      <div className="w-full bg-l_bg1 dark:bg-d_bg3 p-5 rounded-b-xl flex flex-wrap justify-between items-center gap-4 min-h-40">
         <div className="max-w-72">
-          <h2 className="font-bold text-xl">Título del proyecto</h2>
-          <p>Breve descripción del proyecto y en lo que consiste</p>
-          <div className="flex flex-wrap my-3 gap-4 text-xl">
-            <RoundedTag icon={<SiNextdotjs />} />
-            <RoundedTag icon={<SiGithub />} />
-          </div>
+          <h2 className="font-bold text-xl">{props.title}</h2>
+          <p>{props.description}</p>
+          <div className="flex flex-wrap my-6 gap-4 text-xl">{props.icons}</div>
         </div>
-        <div>
-          <Image
-            src={foto}
-            alt="Foto de Alejandro Torcuato"
-            className="max-w-72 rounded-xl"
-          />
-        </div>
+        <div>{props.image}</div>
       </div>
     </div>
   );

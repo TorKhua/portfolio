@@ -11,7 +11,7 @@ function Section(props: {
   return (
     <section
       id={props.id}
-      className={`${props.className === undefined ? "" : props.className} pb-8`}
+      className={`${props.className === undefined ? "" : props.className} mb-14`}
     >
       <Title title={props.title} />
       {props.children}
