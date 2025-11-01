@@ -2,9 +2,10 @@ import React from "react";
 import Section from "../Section";
 import ProjectCard from "@/components/ProjectCard";
 import RoundedTag from "@/components/RoundedTag";
-import { SiMongodb, SiNodedotjs, SiReact } from "react-icons/si";
+import { SiMongodb, SiNodedotjs, SiReact, SiWordpress } from "react-icons/si";
 import Image from "next/image";
 import imgSerode from '/public/serode.svg';
+import imgRamblas from '/public/ramblas.svg';
 
 function Projects() {
   const projects = [
@@ -26,6 +27,23 @@ function Projects() {
         />
       ),
     },
+        {
+      title: "Ramblas Publicidad",
+      description: "Página web",
+      link : "https://ramblaspublicidad.com",
+      icons: (
+        <>
+          <RoundedTag icon={<SiWordpress />} />
+        </>
+      ),
+      image: (
+        <Image
+          src={imgRamblas}
+          alt="Logo de Ramblas"
+          className="max-w-72 filter sepia grayscale"
+        />
+      ),
+    },
   ];
   return (
     <Section title="Proyectos">
@@ -37,6 +55,7 @@ function Projects() {
               description={project.description}
               icons={project.icons}
               image={project.image}
+              link={project.link}
               key={index}
             />
           );
