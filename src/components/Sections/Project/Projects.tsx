@@ -4,11 +4,28 @@ import ProjectCard from "@/components/ProjectCard";
 import RoundedTag from "@/components/RoundedTag";
 import { SiMongodb, SiNodedotjs, SiReact, SiWordpress } from "react-icons/si";
 import Image from "next/image";
-import imgSerode from '/public/serode.svg';
-import imgRamblas from '/public/ramblas.svg';
+import imgSerode from "/public/serode.svg";
+import imgRamblas from "/public/ramblas.svg";
 
 function Projects() {
   const projects = [
+    {
+      title: "Ramblas Publicidad",
+      description: "Página web",
+      link: "https://ramblaspublicidad.com",
+      icons: (
+        <>
+          <RoundedTag icon={<SiWordpress />} />
+        </>
+      ),
+      image: (
+        <Image
+          src={imgRamblas}
+          alt="Logo de Ramblas"
+          className="max-w-72 filter sepia grayscale"
+        />
+      ),
+    },
     {
       title: "Serode",
       description: "El gestor de tareas social",
@@ -23,23 +40,6 @@ function Projects() {
         <Image
           src={imgSerode}
           alt="Foto de Alejandro Torcuato"
-          className="max-w-72 filter sepia grayscale"
-        />
-      ),
-    },
-        {
-      title: "Ramblas Publicidad",
-      description: "Página web",
-      link : "https://ramblaspublicidad.com",
-      icons: (
-        <>
-          <RoundedTag icon={<SiWordpress />} />
-        </>
-      ),
-      image: (
-        <Image
-          src={imgRamblas}
-          alt="Logo de Ramblas"
           className="max-w-72 filter sepia grayscale"
         />
       ),

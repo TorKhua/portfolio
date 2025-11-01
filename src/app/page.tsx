@@ -11,9 +11,9 @@ export default function Home() {
       <Header />
       <div className="px-5 mt-[550px] sm:mt-[500px]">
         <Profile />
+        <Experience />
         <Studies />
         <Skills />
-        <Experience />
         <Projects />
       </div>
     </main>
